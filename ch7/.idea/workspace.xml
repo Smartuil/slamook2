@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="ch7" targetName="pose_estimation_3d2d" />
+      <config projectName="ch7" targetName="pose_estimation_3d3d" />
+      <config projectName="ch7" targetName="triangulation" />
+      <config projectName="ch7" targetName="orb_self" />
+      <config projectName="ch7" targetName="orb_cv" />
+      <config projectName="ch7" targetName="pose_estimation_2d2d" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="47ba40a9-b7a1-4ac2-807e-9a331cedf689" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="ProjectId" id="1ZFI820M9OOQT5K3ndDnJF9wEBf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RunManager" selected="CMake Application.pose_estimation_2d2d">
+    <configuration name="orb_cv" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ch7" TARGET_NAME="orb_cv" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ch7" RUN_TARGET_NAME="orb_cv">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="orb_self" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ch7" TARGET_NAME="orb_self" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ch7" RUN_TARGET_NAME="orb_self">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pose_estimation_2d2d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ch7" TARGET_NAME="pose_estimation_2d2d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ch7" RUN_TARGET_NAME="pose_estimation_2d2d">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pose_estimation_3d2d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ch7" TARGET_NAME="pose_estimation_3d2d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ch7" RUN_TARGET_NAME="pose_estimation_3d2d">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pose_estimation_3d3d" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ch7" TARGET_NAME="pose_estimation_3d3d" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ch7" RUN_TARGET_NAME="pose_estimation_3d3d">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="triangulation" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ch7" TARGET_NAME="triangulation" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ch7" RUN_TARGET_NAME="triangulation">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.orb_cv" />
+      <item itemvalue="CMake Application.orb_self" />
+      <item itemvalue="CMake Application.pose_estimation_2d2d" />
+      <item itemvalue="CMake Application.pose_estimation_3d2d" />
+      <item itemvalue="CMake Application.pose_estimation_3d3d" />
+      <item itemvalue="CMake Application.triangulation" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="47ba40a9-b7a1-4ac2-807e-9a331cedf689" name="Default Changelist" comment="" />
+      <created>1584428252121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1584428252121</updated>
+      <workItem from="1584428254885" duration="2029000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="487" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584429252043">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state x="487" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1584429252043" />
+    <state x="812" y="271" width="424" height="480" key="FileChooserDialogImpl" timestamp="1584429098779">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state x="812" y="271" width="424" height="480" key="FileChooserDialogImpl/0.27.1920.1007@0.27.1920.1007" timestamp="1584429098779" />
+    <state width="1662" height="221" key="GridCell.Tab.0.bottom" timestamp="1584430301828">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="221" key="GridCell.Tab.0.bottom/0.27.1920.1007@0.27.1920.1007" timestamp="1584430301828" />
+    <state width="1662" height="221" key="GridCell.Tab.0.center" timestamp="1584430301828">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="221" key="GridCell.Tab.0.center/0.27.1920.1007@0.27.1920.1007" timestamp="1584430301828" />
+    <state width="1662" height="221" key="GridCell.Tab.0.left" timestamp="1584430301827">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="221" key="GridCell.Tab.0.left/0.27.1920.1007@0.27.1920.1007" timestamp="1584430301827" />
+    <state width="1662" height="221" key="GridCell.Tab.0.right" timestamp="1584430301828">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="221" key="GridCell.Tab.0.right/0.27.1920.1007@0.27.1920.1007" timestamp="1584430301828" />
+    <state width="1662" height="279" key="GridCell.Tab.1.bottom" timestamp="1584429270097">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="279" key="GridCell.Tab.1.bottom/0.27.1920.1007@0.27.1920.1007" timestamp="1584429270097" />
+    <state width="1662" height="279" key="GridCell.Tab.1.center" timestamp="1584429270097">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="279" key="GridCell.Tab.1.center/0.27.1920.1007@0.27.1920.1007" timestamp="1584429270097" />
+    <state width="1662" height="279" key="GridCell.Tab.1.left" timestamp="1584429270097">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="279" key="GridCell.Tab.1.left/0.27.1920.1007@0.27.1920.1007" timestamp="1584429270097" />
+    <state width="1662" height="279" key="GridCell.Tab.1.right" timestamp="1584429270097">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state width="1662" height="279" key="GridCell.Tab.1.right/0.27.1920.1007@0.27.1920.1007" timestamp="1584429270097" />
+    <state x="460" y="129" key="SettingsEditor" timestamp="1584429081492">
+      <screen x="0" y="27" width="1920" height="1007" />
+    </state>
+    <state x="460" y="129" key="SettingsEditor/0.27.1920.1007@0.27.1920.1007" timestamp="1584429081492" />
+  </component>
+</project>
