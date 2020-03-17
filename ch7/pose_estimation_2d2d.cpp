@@ -127,7 +127,9 @@ void pose_estimation_2d2d(std::vector<KeyPoint> keypoints_1,
                           std::vector<DMatch> matches,
                           Mat &R, Mat &t) {
     // 相机内参,TUM Freiburg2
-    Mat K = (Mat_<double>(3, 3) << 520.9, 0, 325.1, 0, 521.0, 249.7, 0, 0, 1);
+    Mat K = (Mat_<double>(3, 3) << 520.9, 0, 325.1,
+                                                0, 521.0, 249.7,
+                                                0, 0, 1);
 
     //-- 把匹配点转换为vector<Point2f>的形式
     vector<Point2f> points1;

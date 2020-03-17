@@ -4,7 +4,7 @@
 
 #include <iostream>
 #include <opencv2/opencv.hpp>
-// #include "extra.h" // used in opencv2
+
 using namespace std;
 using namespace cv;
 
@@ -40,13 +40,10 @@ inline cv::Scalar get_color(float depth) {
 Point2f pixel2cam(const Point2d &p, const Mat &K);
 
 int main(int argc, char **argv) {
-    if (argc != 3) {
-        cout << "usage: triangulation img1 img2" << endl;
-        return 1;
-    }
+
     //-- 读取图像
-    Mat img_1 = imread(argv[1], CV_LOAD_IMAGE_COLOR);
-    Mat img_2 = imread(argv[2], CV_LOAD_IMAGE_COLOR);
+    Mat img_1 = imread("../1.png");
+    Mat img_2 = imread("../2.png");
 
     vector<KeyPoint> keypoints_1, keypoints_2;
     vector<DMatch> matches;
@@ -68,7 +65,7 @@ int main(int argc, char **argv) {
     for (int i = 0; i < matches.size(); i++) {
         // 第一个图
         float depth1 = points[i].z;
-        cout << "depth: " << depth1 << endl;
+        cout << "depth " << i << ": "<< depth1 << endl;
         Point2d pt1_cam = pixel2cam(keypoints_1[matches[i].queryIdx].pt, K);
         cv::circle(img1_plot, keypoints_1[matches[i].queryIdx].pt, 2, get_color(depth1), 2);
 
@@ -166,10 +163,9 @@ void triangulation(
         vector<Point3d> &points) {
     Mat T1 = (Mat_<float>(3, 4) <<
                                 1, 0, 0, 0,
-            0, 1, 0, 0,
-            0, 0, 1, 0);
-    Mat T2 = (Mat_<float>(3, 4) <<
-                                R.at<double>(0, 0), R.at<double>(0, 1), R.at<double>(0, 2), t.at<double>(0, 0),
+                                0, 1, 0, 0,
+                                0, 0, 1, 0);
+    Mat T2 = (Mat_<float>(3, 4) <<R.at<double>(0, 0), R.at<double>(0, 1), R.at<double>(0, 2), t.at<double>(0, 0),
             R.at<double>(1, 0), R.at<double>(1, 1), R.at<double>(1, 2), t.at<double>(1, 0),
             R.at<double>(2, 0), R.at<double>(2, 1), R.at<double>(2, 2), t.at<double>(2, 0)
     );

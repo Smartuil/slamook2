@@ -94,13 +94,8 @@ protected:
 };
 
 int main(int argc, char **argv) {
-    if (argc != 5) {
-        cout << "usage: pose_estimation_3d3d img1 img2 depth1 depth2" << endl;
-        return 1;
-    }
-    //-- 读取图像
-    Mat img_1 = imread(argv[1], CV_LOAD_IMAGE_COLOR);
-    Mat img_2 = imread(argv[2], CV_LOAD_IMAGE_COLOR);
+    Mat img_1 = imread("../1.png");
+    Mat img_2 = imread("../2.png");
 
     vector<KeyPoint> keypoints_1, keypoints_2;
     vector<DMatch> matches;
@@ -108,8 +103,9 @@ int main(int argc, char **argv) {
     cout << "一共找到了" << matches.size() << "组匹配点" << endl;
 
     // 建立3D点
-    Mat depth1 = imread(argv[3], CV_LOAD_IMAGE_UNCHANGED);       // 深度图为16位无符号数，单通道图像
-    Mat depth2 = imread(argv[4], CV_LOAD_IMAGE_UNCHANGED);       // 深度图为16位无符号数，单通道图像
+    Mat depth1 = imread("../1_depth.png");       // 深度图为16位无符号数，单通道图像
+    Mat depth2 = imread("../2_depth.png");
+
     Mat K = (Mat_<double>(3, 3) << 520.9, 0, 325.1, 0, 521.0, 249.7, 0, 0, 1);
     vector<Point3f> pts1, pts2;
 
@@ -257,10 +253,16 @@ void bundleAdjustment(
         Mat &R, Mat &t) {
     // 构建图优化，先设定g2o
     typedef g2o::BlockSolverX BlockSolverType;
-    typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
+    //typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
     // 梯度下降方法，可以从GN, LM, DogLeg 中选
-    auto solver = new g2o::OptimizationAlgorithmLevenberg(
-            g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
+    //auto solver = new g2o::OptimizationAlgorithmLevenberg(
+    //g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
+
+    BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
+    BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );      // 矩阵块求解器
+    // 梯度下降方法，从GN, LM, DogLeg 中选
+    g2o::OptimizationAlgorithmGaussNewton* solver = new g2o::OptimizationAlgorithmGaussNewton( solver_ptr );
+
     g2o::SparseOptimizer optimizer;     // 图模型
     optimizer.setAlgorithm(solver);   // 设置求解器
     optimizer.setVerbose(true);       // 打开调试输出

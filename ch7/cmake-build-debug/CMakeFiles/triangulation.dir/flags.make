@@ -6,5 +6,5 @@ CXX_FLAGS = -std=c++11 -O2  -msse4 -O3 -DNDEBUG
 
 CXX_DEFINES = -DENABLE_SSE
 
-CXX_INCLUDES = -I/home/smartuil/Sophus -I/usr/include/eigen3 -isystem /usr/local/include/opencv4 
+CXX_INCLUDES = -I/home/smartuil/Sophus -I/usr/include/eigen3 -I/usr/local/include/eigen3 -isystem /usr/local/include/opencv4 
 

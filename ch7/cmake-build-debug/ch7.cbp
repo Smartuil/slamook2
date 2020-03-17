@@ -47,6 +47,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -74,6 +75,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -101,6 +103,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -128,6 +131,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -155,6 +159,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -182,6 +187,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -209,6 +215,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -236,6 +243,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -263,6 +271,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -290,6 +299,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -317,6 +327,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
@@ -344,6 +355,7 @@
 					<Add option="-DENABLE_SSE"/>
 					<Add directory="/home/smartuil/Sophus"/>
 					<Add directory="/usr/include/eigen3"/>
+					<Add directory="/usr/local/include/eigen3"/>
 					<Add directory="/usr/local/include/opencv4"/>
 					<Add directory="/usr/include/c++/7"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>

@@ -17,6 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/smartuil/Sophus"
   "/usr/include/eigen3"
+  "/usr/local/include/eigen3"
   "/usr/local/include/opencv4"
   )
 
