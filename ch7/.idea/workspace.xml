@@ -2,10 +2,10 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
+      <config projectName="ch7" targetName="orb_self" />
       <config projectName="ch7" targetName="pose_estimation_3d2d" />
       <config projectName="ch7" targetName="pose_estimation_3d3d" />
       <config projectName="ch7" targetName="triangulation" />
-      <config projectName="ch7" targetName="orb_self" />
       <config projectName="ch7" targetName="orb_cv" />
       <config projectName="ch7" targetName="pose_estimation_2d2d" />
     </generated>
@@ -17,28 +17,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47ba40a9-b7a1-4ac2-807e-9a331cedf689" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_cv.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_cv.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_cv.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_cv.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_self.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_self.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_self.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/orb_self.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_2d2d.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_2d2d.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_2d2d.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_2d2d.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d2d.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d2d.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d2d.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d2d.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d2d.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d2d.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d3d.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d3d.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d3d.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/pose_estimation_3d3d.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/triangulation.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/triangulation.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/triangulation.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/triangulation.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/triangulation.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/triangulation.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/ch7.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/ch7.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_estimation_2d2d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation_2d2d.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_estimation_3d2d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation_3d2d.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_estimation_3d3d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation_3d3d.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triangulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/triangulation.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +102,9 @@
       <option name="presentableId" value="Default" />
       <updated>1584428252121</updated>
       <workItem from="1584428254885" duration="5120000" />
-      <workItem from="1584433384440" duration="3047000" />
+      <workItem from="1584433384440" duration="3549000" />
+      <workItem from="1584602355616" duration="6000" />
+      <workItem from="1584757314018" duration="44000" />
     </task>
     <servers />
   </component>
@@ -135,26 +116,27 @@
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
     <state x="487" y="171" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1007@0.27.1920.1007" timestamp="1584429252043" />
-    <state x="812" y="271" width="424" height="480" key="FileChooserDialogImpl" timestamp="1584433335380">
-      <screen x="0" y="27" width="1920" height="1007" />
+    <state x="812" y="272" width="424" height="480" key="FileChooserDialogImpl" timestamp="1584757335811">
+      <screen x="0" y="28" width="1920" height="1006" />
     </state>
     <state x="812" y="271" width="424" height="480" key="FileChooserDialogImpl/0.27.1920.1007@0.27.1920.1007" timestamp="1584433335380" />
-    <state width="1866" height="250" key="GridCell.Tab.0.bottom" timestamp="1584436049845">
+    <state x="812" y="272" key="FileChooserDialogImpl/0.28.1920.1006@0.28.1920.1006" timestamp="1584757335811" />
+    <state width="1866" height="250" key="GridCell.Tab.0.bottom" timestamp="1584437719947">
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
-    <state width="1866" height="250" key="GridCell.Tab.0.bottom/0.27.1920.1007@0.27.1920.1007" timestamp="1584436049845" />
-    <state width="1866" height="250" key="GridCell.Tab.0.center" timestamp="1584436049845">
+    <state width="1866" height="250" key="GridCell.Tab.0.bottom/0.27.1920.1007@0.27.1920.1007" timestamp="1584437719947" />
+    <state width="1866" height="250" key="GridCell.Tab.0.center" timestamp="1584437719945">
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
-    <state width="1866" height="250" key="GridCell.Tab.0.center/0.27.1920.1007@0.27.1920.1007" timestamp="1584436049845" />
-    <state width="1866" height="250" key="GridCell.Tab.0.left" timestamp="1584436049845">
+    <state width="1866" height="250" key="GridCell.Tab.0.center/0.27.1920.1007@0.27.1920.1007" timestamp="1584437719945" />
+    <state width="1866" height="250" key="GridCell.Tab.0.left" timestamp="1584437719945">
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
-    <state width="1866" height="250" key="GridCell.Tab.0.left/0.27.1920.1007@0.27.1920.1007" timestamp="1584436049845" />
-    <state width="1866" height="250" key="GridCell.Tab.0.right" timestamp="1584436049845">
+    <state width="1866" height="250" key="GridCell.Tab.0.left/0.27.1920.1007@0.27.1920.1007" timestamp="1584437719945" />
+    <state width="1866" height="250" key="GridCell.Tab.0.right" timestamp="1584437719946">
       <screen x="0" y="27" width="1920" height="1007" />
     </state>
-    <state width="1866" height="250" key="GridCell.Tab.0.right/0.27.1920.1007@0.27.1920.1007" timestamp="1584436049845" />
+    <state width="1866" height="250" key="GridCell.Tab.0.right/0.27.1920.1007@0.27.1920.1007" timestamp="1584437719946" />
     <state width="1662" height="279" key="GridCell.Tab.1.bottom" timestamp="1584433375140">
       <screen x="0" y="27" width="1920" height="1007" />
     </state>

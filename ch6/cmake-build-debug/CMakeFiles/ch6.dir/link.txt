@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/ch6.dir/ceresCurveFitting.cpp.o  -o ch6 
