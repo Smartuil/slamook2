@@ -24,7 +24,9 @@ namespace myslam{
         template <typename T>
         static T Get(const std::string &key){
             return T(Config::config_->file_[key]);
+            //return T("/home/smartuil/00");
         }
+
     };
 }
 

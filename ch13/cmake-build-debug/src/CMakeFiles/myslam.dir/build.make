@@ -148,9 +148,35 @@ src/CMakeFiles/myslam.dir/map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myslam.dir/map.cpp.s"
 	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smartuil/CLionProjects/slambook2/ch13/src/map.cpp -o CMakeFiles/myslam.dir/map.cpp.s
 
+src/CMakeFiles/myslam.dir/frontend.cpp.o: src/CMakeFiles/myslam.dir/flags.make
+src/CMakeFiles/myslam.dir/frontend.cpp.o: ../src/frontend.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/myslam.dir/frontend.cpp.o"
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myslam.dir/frontend.cpp.o -c /home/smartuil/CLionProjects/slambook2/ch13/src/frontend.cpp
+
+src/CMakeFiles/myslam.dir/frontend.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myslam.dir/frontend.cpp.i"
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smartuil/CLionProjects/slambook2/ch13/src/frontend.cpp > CMakeFiles/myslam.dir/frontend.cpp.i
+
+src/CMakeFiles/myslam.dir/frontend.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myslam.dir/frontend.cpp.s"
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smartuil/CLionProjects/slambook2/ch13/src/frontend.cpp -o CMakeFiles/myslam.dir/frontend.cpp.s
+
+src/CMakeFiles/myslam.dir/viewer.cpp.o: src/CMakeFiles/myslam.dir/flags.make
+src/CMakeFiles/myslam.dir/viewer.cpp.o: ../src/viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/CMakeFiles/myslam.dir/viewer.cpp.o"
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myslam.dir/viewer.cpp.o -c /home/smartuil/CLionProjects/slambook2/ch13/src/viewer.cpp
+
+src/CMakeFiles/myslam.dir/viewer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/myslam.dir/viewer.cpp.i"
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/smartuil/CLionProjects/slambook2/ch13/src/viewer.cpp > CMakeFiles/myslam.dir/viewer.cpp.i
+
+src/CMakeFiles/myslam.dir/viewer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/myslam.dir/viewer.cpp.s"
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/smartuil/CLionProjects/slambook2/ch13/src/viewer.cpp -o CMakeFiles/myslam.dir/viewer.cpp.s
+
 src/CMakeFiles/myslam.dir/visual_odometry.cpp.o: src/CMakeFiles/myslam.dir/flags.make
 src/CMakeFiles/myslam.dir/visual_odometry.cpp.o: ../src/visual_odometry.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/CMakeFiles/myslam.dir/visual_odometry.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/CMakeFiles/myslam.dir/visual_odometry.cpp.o"
 	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/myslam.dir/visual_odometry.cpp.o -c /home/smartuil/CLionProjects/slambook2/ch13/src/visual_odometry.cpp
 
 src/CMakeFiles/myslam.dir/visual_odometry.cpp.i: cmake_force
@@ -170,6 +196,8 @@ myslam_OBJECTS = \
 "CMakeFiles/myslam.dir/feature.cpp.o" \
 "CMakeFiles/myslam.dir/camera.cpp.o" \
 "CMakeFiles/myslam.dir/map.cpp.o" \
+"CMakeFiles/myslam.dir/frontend.cpp.o" \
+"CMakeFiles/myslam.dir/viewer.cpp.o" \
 "CMakeFiles/myslam.dir/visual_odometry.cpp.o"
 
 # External object files for target myslam
@@ -182,6 +210,8 @@ myslam_EXTERNAL_OBJECTS =
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/feature.cpp.o
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/camera.cpp.o
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/map.cpp.o
+../lib/libmyslam.so: src/CMakeFiles/myslam.dir/frontend.cpp.o
+../lib/libmyslam.so: src/CMakeFiles/myslam.dir/viewer.cpp.o
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/visual_odometry.cpp.o
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/build.make
 ../lib/libmyslam.so: /usr/local/lib/libopencv_dnn.so.4.2.0
@@ -220,7 +250,7 @@ myslam_EXTERNAL_OBJECTS =
 ../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libjpeg.so
 ../lib/libmyslam.so: /usr/lib/x86_64-linux-gnu/libtiff.so
 ../lib/libmyslam.so: src/CMakeFiles/myslam.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX shared library ../../lib/libmyslam.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX shared library ../../lib/libmyslam.so"
 	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/myslam.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

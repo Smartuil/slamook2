@@ -15,9 +15,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/eigen3"
-  "/usr/local/lib/cmake/Pangolin/../../../include"
   "/usr/local/include/eigen3"
+  "/usr/local/lib/cmake/Pangolin/../../../include"
   "/usr/local/lib/cmake/Sophus/../../../include"
   "/usr/include/suitesparse"
   "../include"

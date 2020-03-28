@@ -6,8 +6,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/myslam.dir/dataset.cpp.o"
   "CMakeFiles/myslam.dir/feature.cpp.o"
   "CMakeFiles/myslam.dir/frame.cpp.o"
+  "CMakeFiles/myslam.dir/frontend.cpp.o"
   "CMakeFiles/myslam.dir/map.cpp.o"
   "CMakeFiles/myslam.dir/mappoint.cpp.o"
+  "CMakeFiles/myslam.dir/viewer.cpp.o"
   "CMakeFiles/myslam.dir/visual_odometry.cpp.o"
 )
 

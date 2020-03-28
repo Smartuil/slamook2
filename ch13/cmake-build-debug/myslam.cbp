@@ -55,9 +55,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/lib/cmake/Sophus/../../../include"/>
 					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/home/smartuil/CLionProjects/slambook2/ch13/include"/>
@@ -86,9 +85,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/lib/cmake/Sophus/../../../include"/>
 					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/home/smartuil/CLionProjects/slambook2/ch13/include"/>
@@ -117,9 +115,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/lib/cmake/Sophus/../../../include"/>
 					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/home/smartuil/CLionProjects/slambook2/ch13/include"/>
@@ -148,9 +145,8 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add option="-DGFLAGS_IS_A_DLL=0"/>
-					<Add directory="/usr/include/eigen3"/>
-					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/include/eigen3"/>
+					<Add directory="/usr/local/lib/cmake/Pangolin/../../../include"/>
 					<Add directory="/usr/local/lib/cmake/Sophus/../../../include"/>
 					<Add directory="/usr/include/suitesparse"/>
 					<Add directory="/home/smartuil/CLionProjects/slambook2/ch13/include"/>
@@ -190,10 +186,16 @@
 		<Unit filename="/home/smartuil/CLionProjects/slambook2/ch13/src/frame.cpp">
 			<Option target="myslam"/>
 		</Unit>
+		<Unit filename="/home/smartuil/CLionProjects/slambook2/ch13/src/frontend.cpp">
+			<Option target="myslam"/>
+		</Unit>
 		<Unit filename="/home/smartuil/CLionProjects/slambook2/ch13/src/map.cpp">
 			<Option target="myslam"/>
 		</Unit>
 		<Unit filename="/home/smartuil/CLionProjects/slambook2/ch13/src/mappoint.cpp">
+			<Option target="myslam"/>
+		</Unit>
+		<Unit filename="/home/smartuil/CLionProjects/slambook2/ch13/src/viewer.cpp">
 			<Option target="myslam"/>
 		</Unit>
 		<Unit filename="/home/smartuil/CLionProjects/slambook2/ch13/src/visual_odometry.cpp">

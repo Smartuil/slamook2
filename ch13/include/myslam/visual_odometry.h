@@ -6,6 +6,10 @@
 #define MYSLAM_VISUAL_ODOMETRY_H
 
 #include "myslam/common_include.h"
+#include "myslam/dataset.h"
+#include "myslam/map.h"
+#include "myslam/frontend.h"
+#include "myslam/viewer.h"
 
 namespace myslam{
 
@@ -22,6 +26,18 @@ namespace myslam{
 
         bool Step();
 
+        FrontendStatus GetFrontendStatus() const {
+            return frontend_->GetStatus();
+        }
+
+    private:
+        bool inited_ = false;
+        std::string config_file_path_;
+
+        Frontend::Ptr frontend_ = nullptr;
+        Map::Ptr map_ = nullptr;
+        Viewer::Ptr viewer_ = nullptr;
+        Dataset::Prt dataset_ = nullptr;
 
     };
 }

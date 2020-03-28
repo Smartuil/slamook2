@@ -2,11 +2,11 @@
 // Created by smartuil on 2020/3/26.
 //
 #include "myslam/visual_odometry.h"
+#include "myslam/config.h"
+#include "chrono"
 
 namespace myslam{
-    VisualOdometry::VisualOdometry(std::string &config_path) {
-
-    }
+    VisualOdometry::VisualOdometry(std::string &config_path) : config_file_path_(config_path){}
 
     void VisualOdometry::Run() {
         while(1){
@@ -15,13 +15,43 @@ namespace myslam{
                 break;
             }
         }
+
+        LOG(INFO) << "VO exit";
     }
 
     bool VisualOdometry::Step() {
+        Frame::Ptr new_frame = dataset_->NextFrame();
+        if(new_frame == nullptr) return false;
 
+        auto t1 = std::chrono::steady_clock::now();
+        bool success = frontend_->AddFrame(new_frame);
+        auto t2 = std::chrono::steady_clock::now();
+        auto time_used = std::chrono::duration_cast<std::chrono::duration<double>>(t2 - t1);
+        LOG(INFO) << "VO cost time " << time_used.count() << " seconds.";
+        return success;
     }
 
     bool VisualOdometry::Init() {
+        if(Config::SetParameterFile(config_file_path_) == false){
+            return false;
+        } else{
+            LOG(INFO) << "open success";
+        }
+
+        dataset_ = Dataset::Prt(new Dataset(Config::Get<std::string>("dataset_dir")));
+
+        CHECK_EQ(dataset_->Init(), true);
+
+        frontend_ = Frontend::Ptr(new Frontend);
+        map_ = Map::Ptr(new Map);
+        viewer_ = Viewer::Ptr(new Viewer);
+
+        frontend_->SetMap(map_);
+        frontend_->SetViewer(viewer_);
+        frontend_->SetCameras(dataset_->GetCamera(0), dataset_->GetCamera(1));
+
+        viewer_->SetMap(map_);
+
         return true;
     }
 }

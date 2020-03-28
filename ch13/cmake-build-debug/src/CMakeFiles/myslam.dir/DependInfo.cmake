@@ -9,8 +9,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/smartuil/CLionProjects/slambook2/ch13/src/dataset.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/dataset.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/feature.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/feature.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/frame.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/frame.cpp.o"
+  "/home/smartuil/CLionProjects/slambook2/ch13/src/frontend.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/frontend.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/map.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/map.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/mappoint.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/mappoint.cpp.o"
+  "/home/smartuil/CLionProjects/slambook2/ch13/src/viewer.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/viewer.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/visual_odometry.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/visual_odometry.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
@@ -23,9 +25,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/eigen3"
-  "/usr/local/lib/cmake/Pangolin/../../../include"
   "/usr/local/include/eigen3"
+  "/usr/local/lib/cmake/Pangolin/../../../include"
   "/usr/local/lib/cmake/Sophus/../../../include"
   "/usr/include/suitesparse"
   "../include"

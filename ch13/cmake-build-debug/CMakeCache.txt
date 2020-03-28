@@ -379,6 +379,9 @@ ch13_SOURCE_DIR:STATIC=/home/smartuil/CLionProjects/slambook2/ch13
 //Value Computed by CMake
 myslam_BINARY_DIR:STATIC=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug
 
+//Dependencies for the target
+myslam_LIB_DEPENDS:STATIC=general;opencv_calib3d;general;opencv_core;general;opencv_dnn;general;opencv_features2d;general;opencv_flann;general;opencv_gapi;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_imgproc;general;opencv_ml;general;opencv_objdetect;general;opencv_photo;general;opencv_stitching;general;opencv_video;general;opencv_videoio;general;pangolin;general;GL;general;GLU;general;GLEW;general;glut;general;g2o_core;general;g2o_stuff;general;g2o_types_sba;general;g2o_solver_csparse;general;g2o_csparse_extension;general;/usr/local/lib/libgtest.a;general;/usr/local/lib/libgtest_main.a;general;/usr/lib/x86_64-linux-gnu/libglog.so;general;gflags_shared;general;pthread;general;/usr/lib/x86_64-linux-gnu/libcxsparse.so;
+
 //Value Computed by CMake
 myslam_SOURCE_DIR:STATIC=/home/smartuil/CLionProjects/slambook2/ch13
 
