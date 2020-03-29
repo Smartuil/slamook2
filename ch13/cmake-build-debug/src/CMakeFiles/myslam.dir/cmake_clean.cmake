@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../../lib/libmyslam.pdb"
   "../../lib/libmyslam.so"
+  "CMakeFiles/myslam.dir/backend.cpp.o"
   "CMakeFiles/myslam.dir/camera.cpp.o"
   "CMakeFiles/myslam.dir/config.cpp.o"
   "CMakeFiles/myslam.dir/dataset.cpp.o"

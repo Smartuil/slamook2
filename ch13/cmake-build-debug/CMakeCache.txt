@@ -229,9 +229,6 @@ G2O_CORE_LIBRARY:FILEPATH=/usr/local/lib/libg2o_core.so
 //Path to a library.
 G2O_CORE_LIBRARY_DEBUG:FILEPATH=G2O_CORE_LIBRARY_DEBUG-NOTFOUND
 
-//The directory containing a CMake configuration file for G2O.
-G2O_DIR:PATH=G2O_DIR-NOTFOUND
-
 //Path to a file.
 G2O_INCLUDE_DIR:PATH=/usr/local/include
 
@@ -369,12 +366,6 @@ ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
 //The directory containing a CMake configuration file for Sophus.
 Sophus_DIR:PATH=/usr/local/lib/cmake/Sophus
-
-//Value Computed by CMake
-ch13_BINARY_DIR:STATIC=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug
-
-//Value Computed by CMake
-ch13_SOURCE_DIR:STATIC=/home/smartuil/CLionProjects/slambook2/ch13
 
 //Value Computed by CMake
 myslam_BINARY_DIR:STATIC=/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug

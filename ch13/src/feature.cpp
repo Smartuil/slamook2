@@ -1,9 +1,9 @@
 //
-// Created by smartuil on 2020/3/26.
+// Created by gaoxiang on 19-5-2.
 //
 
 #include "myslam/feature.h"
 
-namespace myslam{
+namespace myslam {
 
 }

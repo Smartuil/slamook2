@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /home/smartuil/CLionProjects/slambook2/ch13/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,17 +88,6 @@ test:
 test/fast: test
 
 .PHONY : test/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -121,15 +121,61 @@ depend:
 	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+test/CMakeFiles/test_triangulation.dir/rule:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_triangulation.dir/rule
+.PHONY : test/CMakeFiles/test_triangulation.dir/rule
+
+# Convenience name for target.
+test_triangulation: test/CMakeFiles/test_triangulation.dir/rule
+
+.PHONY : test_triangulation
+
+# fast build rule for target.
+test_triangulation/fast:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f test/CMakeFiles/test_triangulation.dir/build.make test/CMakeFiles/test_triangulation.dir/build
+.PHONY : test_triangulation/fast
+
+test_triangulation.o: test_triangulation.cpp.o
+
+.PHONY : test_triangulation.o
+
+# target to build an object file
+test_triangulation.cpp.o:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f test/CMakeFiles/test_triangulation.dir/build.make test/CMakeFiles/test_triangulation.dir/test_triangulation.cpp.o
+.PHONY : test_triangulation.cpp.o
+
+test_triangulation.i: test_triangulation.cpp.i
+
+.PHONY : test_triangulation.i
+
+# target to preprocess a source file
+test_triangulation.cpp.i:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f test/CMakeFiles/test_triangulation.dir/build.make test/CMakeFiles/test_triangulation.dir/test_triangulation.cpp.i
+.PHONY : test_triangulation.cpp.i
+
+test_triangulation.s: test_triangulation.cpp.s
+
+.PHONY : test_triangulation.s
+
+# target to generate assembly for a file
+test_triangulation.cpp.s:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f test/CMakeFiles/test_triangulation.dir/build.make test/CMakeFiles/test_triangulation.dir/test_triangulation.cpp.s
+.PHONY : test_triangulation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... test_triangulation"
+	@echo "... test"
+	@echo "... test_triangulation.o"
+	@echo "... test_triangulation.i"
+	@echo "... test_triangulation.s"
 .PHONY : help
 
 

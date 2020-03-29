@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/smartuil/CLionProjects/slambook2/ch13/src/backend.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/backend.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/camera.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/camera.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/config.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/config.cpp.o"
   "/home/smartuil/CLionProjects/slambook2/ch13/src/dataset.cpp" "/home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug/src/CMakeFiles/myslam.dir/dataset.cpp.o"

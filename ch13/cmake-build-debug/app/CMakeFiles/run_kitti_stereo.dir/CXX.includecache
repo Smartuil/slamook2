@@ -6,41 +6,49 @@
 
 #IncludeRegexTransform: 
 
+../include/myslam/backend.h
+myslam/common_include.h
+../include/myslam/myslam/common_include.h
+myslam/frame.h
+../include/myslam/myslam/frame.h
+myslam/map.h
+../include/myslam/myslam/map.h
+
 ../include/myslam/camera.h
 myslam/common_include.h
 ../include/myslam/myslam/common_include.h
 
 ../include/myslam/common_include.h
-string
-../include/myslam/string
-memory
-../include/myslam/memory
 atomic
-../include/myslam/atomic
+-
 condition_variable
-../include/myslam/condition_variable
+-
 iostream
-../include/myslam/iostream
+-
 list
-../include/myslam/list
+-
 map
-../include/myslam/map
+-
+memory
+-
 mutex
-../include/myslam/mutex
+-
 set
-../include/myslam/set
+-
+string
+-
 thread
-../include/myslam/thread
+-
 typeinfo
-../include/myslam/typeinfo
+-
 unordered_map
-../include/myslam/unordered_map
+-
 vector
-../include/myslam/vector
+-
 Eigen/Core
-../include/myslam/Eigen/Core
+-
 Eigen/Geometry
-../include/myslam/Eigen/Geometry
+-
 sophus/se3.hpp
 -
 sophus/so3.hpp
@@ -66,7 +74,7 @@ myslam/common_include.h
 
 ../include/myslam/frontend.h
 opencv2/features2d.hpp
-../include/myslam/opencv2/features2d.hpp
+-
 myslam/common_include.h
 ../include/myslam/myslam/common_include.h
 myslam/frame.h
@@ -87,24 +95,24 @@ myslam/common_include.h
 ../include/myslam/myslam/common_include.h
 
 ../include/myslam/viewer.h
+thread
+-
+pangolin/pangolin.h
+-
 myslam/common_include.h
 ../include/myslam/myslam/common_include.h
 myslam/frame.h
 ../include/myslam/myslam/frame.h
 myslam/map.h
 ../include/myslam/myslam/map.h
-thread
-../include/myslam/thread
-pangolin/pangolin.h
-../include/myslam/pangolin/pangolin.h
 
 ../include/myslam/visual_odometry.h
+myslam/backend.h
+../include/myslam/myslam/backend.h
 myslam/common_include.h
 ../include/myslam/myslam/common_include.h
 myslam/dataset.h
 ../include/myslam/myslam/dataset.h
-myslam/map.h
-../include/myslam/myslam/map.h
 myslam/frontend.h
 ../include/myslam/myslam/frontend.h
 myslam/viewer.h
@@ -112,7 +120,7 @@ myslam/viewer.h
 
 /home/smartuil/CLionProjects/slambook2/ch13/app/run_kitti_stereo.cpp
 gflags/gflags.h
-/home/smartuil/CLionProjects/slambook2/ch13/app/gflags/gflags.h
+-
 myslam/visual_odometry.h
 /home/smartuil/CLionProjects/slambook2/ch13/app/myslam/visual_odometry.h
 

@@ -71,13 +71,14 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "app/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "app/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "app/CMakeFiles/run_kitti_stereo.dir/DependInfo.cmake"
   "src/CMakeFiles/myslam.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_triangulation.dir/DependInfo.cmake"
+  "app/CMakeFiles/run_kitti_stereo.dir/DependInfo.cmake"
   )

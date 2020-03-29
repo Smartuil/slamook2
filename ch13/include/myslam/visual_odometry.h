@@ -1,45 +1,57 @@
-//
-// Created by smartuil on 2020/3/26.
-//
-
+#pragma once
 #ifndef MYSLAM_VISUAL_ODOMETRY_H
 #define MYSLAM_VISUAL_ODOMETRY_H
 
+#include "myslam/backend.h"
 #include "myslam/common_include.h"
 #include "myslam/dataset.h"
-#include "myslam/map.h"
 #include "myslam/frontend.h"
 #include "myslam/viewer.h"
 
-namespace myslam{
+namespace myslam {
 
-    class VisualOdometry{
-    public:
-        EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
-        typedef std::shared_ptr<VisualOdometry> Ptr;
+/**
+ * VO 对外接口
+ */
+class VisualOdometry {
+   public:
+    EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
+    typedef std::shared_ptr<VisualOdometry> Ptr;
 
-        VisualOdometry(std::string &config_path);
+    /// constructor with config file
+    VisualOdometry(std::string &config_path);
 
-        bool Init();
+    /**
+     * do initialization things before run
+     * @return true if success
+     */
+    bool Init();
 
-        void Run();
+    /**
+     * start vo in the dataset
+     */
+    void Run();
 
-        bool Step();
+    /**
+     * Make a step forward in dataset
+     */
+    bool Step();
 
-        FrontendStatus GetFrontendStatus() const {
-            return frontend_->GetStatus();
-        }
+    /// 获取前端状态
+    FrontendStatus GetFrontendStatus() const { return frontend_->GetStatus(); }
 
-    private:
-        bool inited_ = false;
-        std::string config_file_path_;
+   private:
+    bool inited_ = false;
+    std::string config_file_path_;
 
-        Frontend::Ptr frontend_ = nullptr;
-        Map::Ptr map_ = nullptr;
-        Viewer::Ptr viewer_ = nullptr;
-        Dataset::Prt dataset_ = nullptr;
+    Frontend::Ptr frontend_ = nullptr;
+    Backend::Ptr backend_ = nullptr;
+    Map::Ptr map_ = nullptr;
+    Viewer::Ptr viewer_ = nullptr;
 
-    };
-}
+    // dataset
+    Dataset::Ptr dataset_ = nullptr;
+};
+}  // namespace myslam
 
-#endif //MYSLAM_VISUAL_ODOMETRY_H
+#endif  // MYSLAM_VISUAL_ODOMETRY_H

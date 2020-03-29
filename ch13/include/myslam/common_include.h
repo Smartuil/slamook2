@@ -1,29 +1,28 @@
-//
-// Created by smartuil on 2020/3/26.
-//
-
+#pragma once
 #ifndef MYSLAM_COMMON_INCLUDE_H
 #define MYSLAM_COMMON_INCLUDE_H
 
-//std
-#include "string"
-#include "memory"
-#include "atomic"
-#include "condition_variable"
-#include "iostream"
-#include "list"
-#include "map"
-#include "mutex"
-#include "set"
-#include "thread"
-#include "typeinfo"
-#include "unordered_map"
-#include "vector"
+// std
+#include <atomic>
+#include <condition_variable>
+#include <iostream>
+#include <list>
+#include <map>
+#include <memory>
+#include <mutex>
+#include <set>
+#include <string>
+#include <thread>
+#include <typeinfo>
+#include <unordered_map>
+#include <vector>
 
-//Eigen
-#include "Eigen/Core"
-#include "Eigen/Geometry"
+// define the commonly included file to avoid a long include list
+#include <Eigen/Core>
+#include <Eigen/Geometry>
 
+// typedefs for eigen
+// double matricies
 typedef Eigen::Matrix<double, Eigen::Dynamic, Eigen::Dynamic> MatXX;
 typedef Eigen::Matrix<double, 10, 10> Mat1010;
 typedef Eigen::Matrix<double, 13, 13> Mat1313;
@@ -114,4 +113,4 @@ using cv::Mat;
 // glog
 #include <glog/logging.h>
 
-#endif //MYSLAM_COMMON_INCLUDE_H
+#endif  // MYSLAM_COMMON_INCLUDE_H

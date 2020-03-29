@@ -136,6 +136,33 @@ myslam/fast:
 	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/build
 .PHONY : myslam/fast
 
+backend.o: backend.cpp.o
+
+.PHONY : backend.o
+
+# target to build an object file
+backend.cpp.o:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.o
+.PHONY : backend.cpp.o
+
+backend.i: backend.cpp.i
+
+.PHONY : backend.i
+
+# target to preprocess a source file
+backend.cpp.i:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.i
+.PHONY : backend.cpp.i
+
+backend.s: backend.cpp.s
+
+.PHONY : backend.s
+
+# target to generate assembly for a file
+backend.cpp.s:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.s
+.PHONY : backend.cpp.s
+
 camera.o: camera.cpp.o
 
 .PHONY : camera.o
@@ -271,6 +298,33 @@ frame.cpp.s:
 	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frame.cpp.s
 .PHONY : frame.cpp.s
 
+frontend.o: frontend.cpp.o
+
+.PHONY : frontend.o
+
+# target to build an object file
+frontend.cpp.o:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.o
+.PHONY : frontend.cpp.o
+
+frontend.i: frontend.cpp.i
+
+.PHONY : frontend.i
+
+# target to preprocess a source file
+frontend.cpp.i:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.i
+.PHONY : frontend.cpp.i
+
+frontend.s: frontend.cpp.s
+
+.PHONY : frontend.s
+
+# target to generate assembly for a file
+frontend.cpp.s:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/frontend.cpp.s
+.PHONY : frontend.cpp.s
+
 map.o: map.cpp.o
 
 .PHONY : map.o
@@ -325,6 +379,33 @@ mappoint.cpp.s:
 	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/mappoint.cpp.s
 .PHONY : mappoint.cpp.s
 
+viewer.o: viewer.cpp.o
+
+.PHONY : viewer.o
+
+# target to build an object file
+viewer.cpp.o:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.o
+.PHONY : viewer.cpp.o
+
+viewer.i: viewer.cpp.i
+
+.PHONY : viewer.i
+
+# target to preprocess a source file
+viewer.cpp.i:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.i
+.PHONY : viewer.cpp.i
+
+viewer.s: viewer.cpp.s
+
+.PHONY : viewer.s
+
+# target to generate assembly for a file
+viewer.cpp.s:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/build && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/viewer.cpp.s
+.PHONY : viewer.cpp.s
+
 visual_odometry.o: visual_odometry.cpp.o
 
 .PHONY : visual_odometry.o
@@ -362,6 +443,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... myslam"
 	@echo "... test"
+	@echo "... backend.o"
+	@echo "... backend.i"
+	@echo "... backend.s"
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
@@ -377,12 +461,18 @@ help:
 	@echo "... frame.o"
 	@echo "... frame.i"
 	@echo "... frame.s"
+	@echo "... frontend.o"
+	@echo "... frontend.i"
+	@echo "... frontend.s"
 	@echo "... map.o"
 	@echo "... map.i"
 	@echo "... map.s"
 	@echo "... mappoint.o"
 	@echo "... mappoint.i"
 	@echo "... mappoint.s"
+	@echo "... viewer.o"
+	@echo "... viewer.i"
+	@echo "... viewer.s"
 	@echo "... visual_odometry.o"
 	@echo "... visual_odometry.i"
 	@echo "... visual_odometry.s"

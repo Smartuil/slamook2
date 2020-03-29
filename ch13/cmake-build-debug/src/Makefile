@@ -136,6 +136,33 @@ myslam/fast:
 	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/build
 .PHONY : myslam/fast
 
+backend.o: backend.cpp.o
+
+.PHONY : backend.o
+
+# target to build an object file
+backend.cpp.o:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.o
+.PHONY : backend.cpp.o
+
+backend.i: backend.cpp.i
+
+.PHONY : backend.i
+
+# target to preprocess a source file
+backend.cpp.i:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.i
+.PHONY : backend.cpp.i
+
+backend.s: backend.cpp.s
+
+.PHONY : backend.s
+
+# target to generate assembly for a file
+backend.cpp.s:
+	cd /home/smartuil/CLionProjects/slambook2/ch13/cmake-build-debug && $(MAKE) -f src/CMakeFiles/myslam.dir/build.make src/CMakeFiles/myslam.dir/backend.cpp.s
+.PHONY : backend.cpp.s
+
 camera.o: camera.cpp.o
 
 .PHONY : camera.o
@@ -416,6 +443,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... myslam"
 	@echo "... test"
+	@echo "... backend.o"
+	@echo "... backend.i"
+	@echo "... backend.s"
 	@echo "... camera.o"
 	@echo "... camera.i"
 	@echo "... camera.s"
