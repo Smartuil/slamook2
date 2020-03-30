@@ -33,8 +33,11 @@ void Backend::BackendLoop() {
         map_update_.wait(lock);
 
         /// 后端仅优化激活的Frames和Landmarks
-        Map::KeyframesType active_kfs = map_->GetActiveKeyFrames();
-        Map::LandmarksType active_landmarks = map_->GetActiveMapPoints();
+        //Map::KeyframesType active_kfs = map_->GetActiveKeyFrames();
+        //Map::LandmarksType active_landmarks = map_->GetActiveMapPoints();
+
+        Map::KeyframesType active_kfs = map_->GetAllKeyFrames();
+        Map::LandmarksType active_landmarks = map_->GetAllMapPoints();
         Optimize(active_kfs, active_landmarks);
     }
 }

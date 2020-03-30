@@ -27,8 +27,11 @@ void Viewer::AddCurrentFrame(Frame::Ptr current_frame) {
 void Viewer::UpdateMap() {
     std::unique_lock<std::mutex> lck(viewer_data_mutex_);
     assert(map_ != nullptr);
-    active_keyframes_ = map_->GetActiveKeyFrames();
-    active_landmarks_ = map_->GetActiveMapPoints();
+    //active_keyframes_ = map_->GetActiveKeyFrames();
+    //active_landmarks_ = map_->GetActiveMapPoints();
+
+    active_keyframes_ = map_->GetAllKeyFrames();
+    active_landmarks_ = map_->GetAllMapPoints();
     map_updated_ = true;
 }
 
