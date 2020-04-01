@@ -13,8 +13,8 @@ using namespace cv;
 using namespace Eigen;
 
 int main(){
-    double ar=1.0,br=2.0,cr=1.0;
-    double ae=2.0,be=-1.0,ce=5.0;
+    double ar=1.0,br=2.0,cr=1.0;//真实参数
+    double ae=2.0,be=-1.0,ce=5.0;//估计参数
     int N=100;
     double w_sigma=1.0;
     double inv_sigma=1.0/w_sigma;

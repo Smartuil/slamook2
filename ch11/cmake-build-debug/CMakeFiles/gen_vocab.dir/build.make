@@ -88,7 +88,7 @@ gen_vocab: /usr/local/lib/libopencv_photo.so.4.2.0
 gen_vocab: /usr/local/lib/libopencv_stitching.so.4.2.0
 gen_vocab: /usr/local/lib/libopencv_video.so.4.2.0
 gen_vocab: /usr/local/lib/libopencv_videoio.so.4.2.0
-gen_vocab: /usr/local/lib/libDBoW3.a
+gen_vocab: /usr/local/lib/libDBoW3.so
 gen_vocab: /usr/local/lib/libopencv_imgcodecs.so.4.2.0
 gen_vocab: /usr/local/lib/libopencv_calib3d.so.4.2.0
 gen_vocab: /usr/local/lib/libopencv_features2d.so.4.2.0

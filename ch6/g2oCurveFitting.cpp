@@ -76,10 +76,18 @@ int main(){
         y_data.push_back(exp(ar*x*x+br*x+cr)+rng.gaussian(w_sigma*w_sigma));
     }
 
-    typedef g2o::BlockSolver<g2o::BlockSolverTraits<3,1>>BlockSolverType;
-    BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
-    BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );
-    g2o::OptimizationAlgorithmGaussNewton* solver = new g2o::OptimizationAlgorithmGaussNewton( solver_ptr );
+    //typedef g2o::BlockSolver<g2o::BlockSolverTraits<3,1>>BlockSolverType;
+    //BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
+    //BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );
+    //g2o::OptimizationAlgorithmGaussNewton* solver = new g2o::OptimizationAlgorithmGaussNewton( solver_ptr );
+
+    // 构建图优化，先设定g2o
+    typedef g2o::BlockSolver<g2o::BlockSolverTraits<3, 1>> BlockSolverType;  // 每个误差项优化变量维度为3，误差值维度为1
+    typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
+
+    // 梯度下降方法，可以从GN, LM, DogLeg 中选
+    auto solver = new g2o::OptimizationAlgorithmGaussNewton(
+            g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
     g2o::SparseOptimizer optimizer;
     optimizer.setAlgorithm(solver);
     optimizer.setVerbose(true);

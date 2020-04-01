@@ -95,6 +95,7 @@ int main(int argc, char **argv) {
         pts_2d_eigen.push_back(Eigen::Vector2d(pts_2d[i].x, pts_2d[i].y));
     }
 
+    cout << "---------------------------------------------------" << endl;
     cout << "calling bundle adjustment by gauss newton" << endl;
     Sophus::SE3d pose_gn;
     t1 = chrono::steady_clock::now();
@@ -103,6 +104,7 @@ int main(int argc, char **argv) {
     time_used = chrono::duration_cast<chrono::duration<double>>(t2 - t1);
     cout << "solve pnp by gauss newton cost time: " << time_used.count() << " seconds." << endl;
 
+    cout << "---------------------------------------------------" << endl;
     cout << "calling bundle adjustment by g2o" << endl;
     Sophus::SE3d pose_g2o;
     t1 = chrono::steady_clock::now();
@@ -311,15 +313,15 @@ void bundleAdjustmentG2O(
 
     // 构建图优化，先设定g2o
     typedef g2o::BlockSolver<g2o::BlockSolverTraits<6, 3>> BlockSolverType;  // pose is 6, landmark is 3
-    //typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
+    typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
     // 梯度下降方法，可以从GN, LM, DogLeg 中选
-    //auto solver = new g2o::OptimizationAlgorithmGaussNewton(
-            //g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
+    auto solver = new g2o::OptimizationAlgorithmGaussNewton(
+            g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
 
-    BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
-    BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );      // 矩阵块求解器
+    //BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
+    //BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );      // 矩阵块求解器
     // 梯度下降方法，从GN, LM, DogLeg 中选
-    g2o::OptimizationAlgorithmGaussNewton* solver = new g2o::OptimizationAlgorithmGaussNewton( solver_ptr );
+    //g2o::OptimizationAlgorithmGaussNewton* solver = new g2o::OptimizationAlgorithmGaussNewton( solver_ptr );
 
     g2o::SparseOptimizer optimizer;     // 图模型
     optimizer.setAlgorithm(solver);   // 设置求解器

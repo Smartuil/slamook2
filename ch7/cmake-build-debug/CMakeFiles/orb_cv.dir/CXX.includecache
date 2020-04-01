@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/smartuil/CLionProjects/slambook2/ch7/1.cpp
+/home/smartuil/CLionProjects/slambook2/ch7/orb_cv.cpp
 iostream
 -
 opencv2/core/core.hpp

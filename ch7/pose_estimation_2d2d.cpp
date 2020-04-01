@@ -46,11 +46,11 @@ int main(int argc, char **argv) {
     Mat R, t;
     pose_estimation_2d2d(keypoints_1, keypoints_2, matches, R, t);
 
-    //-- 验证E=t^R*scale
+    //-- 验证E=t^R*scale,反对称矩阵
     Mat t_x =
             (Mat_<double>(3, 3) << 0, -t.at<double>(2, 0), t.at<double>(1, 0),
-                    t.at<double>(2, 0), 0, -t.at<double>(0, 0),
-                    -t.at<double>(1, 0), t.at<double>(0, 0), 0);
+                                                t.at<double>(2, 0), 0, -t.at<double>(0, 0),
+                                                -t.at<double>(1, 0), t.at<double>(0, 0), 0);
 
     cout << "t^R=" << endl << t_x * R << endl;
 
@@ -136,6 +136,11 @@ void pose_estimation_2d2d(std::vector<KeyPoint> keypoints_1,
     vector<Point2f> points2;
 
     for (int i = 0; i < (int) matches.size(); i++) {
+        /*
+         * queryIdx : 查询点的索引（当前要寻找匹配结果的点在它所在图片上的索引）.
+         * trainIdx : 被查询到的点的索引（存储库中的点的在存储库上的索引）
+         * imgIdx : 有争议(常为0)
+         */
         points1.push_back(keypoints_1[matches[i].queryIdx].pt);
         points2.push_back(keypoints_2[matches[i].trainIdx].pt);
     }

@@ -240,7 +240,7 @@ void pose_estimation_3d3d(const vector<Point3f> &pts1,
 
     // convert to cv::Mat
     R = (Mat_<double>(3, 3) <<
-                            R_(0, 0), R_(0, 1), R_(0, 2),
+            R_(0, 0), R_(0, 1), R_(0, 2),
             R_(1, 0), R_(1, 1), R_(1, 2),
             R_(2, 0), R_(2, 1), R_(2, 2)
     );
@@ -253,15 +253,15 @@ void bundleAdjustment(
         Mat &R, Mat &t) {
     // 构建图优化，先设定g2o
     typedef g2o::BlockSolverX BlockSolverType;
-    //typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
+    typedef g2o::LinearSolverDense<BlockSolverType::PoseMatrixType> LinearSolverType; // 线性求解器类型
     // 梯度下降方法，可以从GN, LM, DogLeg 中选
-    //auto solver = new g2o::OptimizationAlgorithmLevenberg(
-    //g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
+    auto solver = new g2o::OptimizationAlgorithmLevenberg(
+    g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
 
-    BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
-    BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );      // 矩阵块求解器
+    //BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverDense<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
+    //BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );      // 矩阵块求解器
     // 梯度下降方法，从GN, LM, DogLeg 中选
-    g2o::OptimizationAlgorithmGaussNewton* solver = new g2o::OptimizationAlgorithmGaussNewton( solver_ptr );
+    //g2o::OptimizationAlgorithmGaussNewton* solver = new g2o::OptimizationAlgorithmGaussNewton( solver_ptr );
 
     g2o::SparseOptimizer optimizer;     // 图模型
     optimizer.setAlgorithm(solver);   // 设置求解器
@@ -278,8 +278,7 @@ void bundleAdjustment(
         EdgeProjectXYZRGBDPoseOnly *edge = new EdgeProjectXYZRGBDPoseOnly(
                 Eigen::Vector3d(pts2[i].x, pts2[i].y, pts2[i].z));
         edge->setVertex(0, pose);
-        edge->setMeasurement(Eigen::Vector3d(
-                pts1[i].x, pts1[i].y, pts1[i].z));
+        edge->setMeasurement(Eigen::Vector3d(pts1[i].x, pts1[i].y, pts1[i].z));
         edge->setInformation(Eigen::Matrix3d::Identity());
         optimizer.addEdge(edge);
     }
