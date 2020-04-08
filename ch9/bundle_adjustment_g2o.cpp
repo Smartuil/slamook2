@@ -138,13 +138,13 @@ void SolveBA(BALProblem &bal_problem) {
 
     // pose dimension 9, landmark is 3
     typedef g2o::BlockSolver<g2o::BlockSolverTraits<9, 3>> BlockSolverType;
-    //typedef g2o::LinearSolverCSparse<BlockSolverType::PoseMatrixType> LinearSolverType;
+    typedef g2o::LinearSolverCSparse<BlockSolverType::PoseMatrixType> LinearSolverType;
     // use LM
-    //auto solver = new g2o::OptimizationAlgorithmLevenberg(g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
+    auto solver = new g2o::OptimizationAlgorithmLevenberg(g2o::make_unique<BlockSolverType>(g2o::make_unique<LinearSolverType>()));
 
-    BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverCSparse<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
-    BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );
-    g2o::OptimizationAlgorithmLevenberg* solver = new g2o::OptimizationAlgorithmLevenberg( solver_ptr );
+    //BlockSolverType::LinearSolverType* linearSolver = new g2o::LinearSolverCSparse<BlockSolverType::PoseMatrixType>(); // 线性方程求解器
+    //BlockSolverType* solver_ptr = new BlockSolverType( linearSolver );
+    //g2o::OptimizationAlgorithmLevenberg* solver = new g2o::OptimizationAlgorithmLevenberg( solver_ptr );
 
     g2o::SparseOptimizer optimizer;
     optimizer.setAlgorithm(solver);

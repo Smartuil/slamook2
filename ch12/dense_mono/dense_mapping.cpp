@@ -186,7 +186,7 @@ int main(int argc, char **argv) {
     cout << "read total " << color_image_files.size() << " files." << endl;
 
     // 第一张图
-    Mat ref = imread(color_image_files[0], 0);                // gray-scale image
+    Mat ref = imread(color_image_files[0], IMREAD_GRAYSCALE );                // gray-scale image
     SE3d pose_ref_TWC = poses_TWC[0];
     double init_depth = 3.0;    // 深度初始值
     double init_cov2 = 3.0;     // 方差初始值
@@ -207,7 +207,7 @@ int main(int argc, char **argv) {
     }
 
     cout << "estimation returns, saving depth map ..." << endl;
-    imwrite("depth.png", depth);
+    imwrite("../depth.png", depth);
     cout << "done." << endl;
 
     return 0;
@@ -290,6 +290,7 @@ bool epipolarSearch(
     const SE3d &T_C_R, const Vector2d &pt_ref,
     const double &depth_mu, const double &depth_cov,
     Vector2d &pt_curr, Vector2d &epipolar_direction) {
+
     Vector3d f_ref = px2cam(pt_ref);
     f_ref.normalize();
     Vector3d P_ref = f_ref * depth_mu;    // 参考帧的 P 向量
@@ -312,7 +313,7 @@ bool epipolarSearch(
     // 在极线上搜索，以深度均值点为中心，左右各取半长度
     double best_ncc = -1.0;
     Vector2d best_px_curr;
-    for (double l = -half_length; l <= half_length; l += 0.7) { // l+=sqrt(2)
+    for (double l = -half_length; l <= half_length; l += 0.7) { // l+=sqrt(2)/2
         Vector2d px_curr = px_mean_curr + l * epipolar_direction;  // 待匹配点
         if (!inside(px_curr))
             continue;

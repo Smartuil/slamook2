@@ -16,33 +16,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47ba40a9-b7a1-4ac2-807e-9a331cedf689" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ch11/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/feature_training.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/feature_training.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/feature_training.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/feature_training.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/feature_training.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/feature_training.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/gen_vocab.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/gen_vocab.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/gen_vocab.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/gen_vocab.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/loop_closure.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/loop_closure.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/loop_closure.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/loop_closure.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/loop_closure.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/cmake-build-debug/CMakeFiles/loop_closure.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/loop_closure.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/loop_closure.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch11/vocabulary.yml.gz" beforeDir="false" afterPath="$PROJECT_DIR$/../ch11/vocabulary.yml.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch6/cmake-build-debug/CMakeFiles/g2oCurveFitting.dir/g2oCurveFitting.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../ch6/cmake-build-debug/CMakeFiles/g2oCurveFitting.dir/g2oCurveFitting.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch6/cmake-build-debug/g2oCurveFitting" beforeDir="false" afterPath="$PROJECT_DIR$/../ch6/cmake-build-debug/g2oCurveFitting" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch6/g2oCurveFitting.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ch6/g2oCurveFitting.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ch6/gaussNewton.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../ch6/gaussNewton.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/orb_cv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/orb_cv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pose_estimation_3d2d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pose_estimation_3d2d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/pose_estimation_3d3d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/pose_estimation_3d3d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/triangulation" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/triangulation" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_estimation_2d2d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation_2d2d.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_estimation_3d2d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation_3d2d.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pose_estimation_3d3d.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/pose_estimation_3d3d.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/triangulation.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/triangulation.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="47ba40a9-b7a1-4ac2-807e-9a331cedf689" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -130,6 +104,7 @@
       <workItem from="1584602355616" duration="6000" />
       <workItem from="1584757314018" duration="44000" />
       <workItem from="1585721722542" duration="8025000" />
+      <workItem from="1586068986097" duration="24000" />
     </task>
     <servers />
   </component>

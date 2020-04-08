@@ -230,8 +230,7 @@ void JacobianAccumulator::accumulate_jacobian(const cv::Range &range) {
     for (size_t i = range.start; i < range.end; i++) {
 
         // compute the projection in the second image
-        Eigen::Vector3d point_ref =
-                depth_ref[i] * Eigen::Vector3d((px_ref[i][0] - cx) / fx, (px_ref[i][1] - cy) / fy, 1);
+        Eigen::Vector3d point_ref = depth_ref[i] * Eigen::Vector3d((px_ref[i][0] - cx) / fx, (px_ref[i][1] - cy) / fy, 1);
         Eigen::Vector3d point_cur = T21 * point_ref;
         if (point_cur[2] < 0)   // depth invalid
             continue;
